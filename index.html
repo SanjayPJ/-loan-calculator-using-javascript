@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+
+    <title>Loan Calculator</title>
+
+    <style>
+        body {
+            font-family: 'Ubuntu', sans-serif;
+        }
+        .loader{
+            display: none;
+        }
+        .results{
+            display: none;
+        }
+        .alert{
+            display: none;        }
+    </style>
+</head>
+
+<body class="bg-dark">
+
+    <!--main container-->
+    <div class="container">
+        <div class="card mt-5 mx-auto" style="width: 70%;">
+            <div class="card-body">
+                <h4 class="text-center pb-4">Loan Calculator</h4>
+                <!--                form starts here-->
+
+
+                <!--                alert-->
+                <div class="alert alert-danger" role="alert">
+                   Please check your numbers
+                </div>
+                <!--                alert-->
+
+                <form class="form-inline">
+                    <div class="input-group mb-2 mr-sm-2 w-100">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">$</div>
+                        </div>
+                        <input type="number" class="form-control loan-amount" id="inlineFormInputGroupUsername2" placeholder="Loan Amount">
+                    </div>
+                    <div class="input-group mb-2 mr-sm-2 w-100">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">%</div>
+                        </div>
+                        <input type="number" class="form-control interest" id="inlineFormInputGroupUsername2" placeholder="Interest">
+                    </div>
+
+                    <input type="number" class="form-control w-100 year" id="inlineFormInputName" placeholder="Years to Repay">
+                    <button type="submit" class="btn btn-dark mt-3 w-100">Calculate</button>
+
+                </form>
+
+                <!--                form ends here-->
+
+
+                <!--                loader here-->
+
+
+                <div class="loader text-center">
+                    
+                    <img src="img/loader.svg" alt="">
+                </div>
+
+
+                <!--                loader here-->
+
+                <!--           results here-->
+                <div class="results mt-5">
+                    <h5 class="pb-2 text-center">Results</h5>
+                    <div class="input-group mb-2 mr-sm-2 w-100">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text ">Monthly Payment</div>
+                        </div>
+                        <input type="number" class="form-control monthly-payment" id="inlineFormInputGroupUsername2" disabled>
+                    </div>
+                    <div class="input-group mb-2 mr-sm-2 w-100">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text ">Total Payment</div>
+                        </div>
+                        <input type="number" class="form-control total-payment" id="inlineFormInputGroupUsername2" disabled>
+                    </div>
+                    <div class="input-group mb-2 mr-sm-2 w-100">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">Monthly Interest</div>
+                        </div>
+                        <input type="number" class="form-control monthly-interest" id="inlineFormInputGroupUsername2" disabled>
+                    </div>
+
+
+
+                </div>
+
+
+                <!--           results here-->
+            </div>
+        </div>
+
+
+
+    </div>
+    <!--webpage loaded-->
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
